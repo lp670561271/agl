@@ -2,13 +2,6 @@ package com.shiro.mode;
 
 import com.framework.base.BaseObject;
 
-/**
- * 实体日志BaseObject.java
- *
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author wangxin
- * @Date Apr 1, 2015
- */
 public class EntitylLog extends BaseObject {
 
     private static final long serialVersionUID = 6960904012932671556L;

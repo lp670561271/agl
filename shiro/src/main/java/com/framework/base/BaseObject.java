@@ -3,16 +3,6 @@ package com.framework.base;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * POJO基类对象
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author majun
- * @date 2014-10-19
- * =================Modify Record=================
- * @Modifier            @date           @Content
- * majun                2014-10-18      新增
- * wangxin              2014-02-10      属性命名变更
- */
 public class BaseObject implements Serializable {
     
     private static final long serialVersionUID = 329430609755626516L;

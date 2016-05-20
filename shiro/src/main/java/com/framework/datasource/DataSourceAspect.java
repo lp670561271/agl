@@ -6,15 +6,6 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.reflect.MethodSignature;
 
-/**
- * 数据源切面类 
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author majun
- * @date 2014-9-28
- * =================Modify Record=================
- * @Modifier			@date			@Content
- * majun				2014-09-28		新增
- */
 public class DataSourceAspect 
 {
 	

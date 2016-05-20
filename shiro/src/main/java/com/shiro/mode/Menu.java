@@ -2,13 +2,6 @@ package com.shiro.mode;
 
 import com.framework.base.BaseObject;
 
-/**
- * 菜单实体
- *
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author wangxin
- * @Date Apr 1, 2015
- */
 public class Menu extends BaseObject {
 
     private static final long serialVersionUID = -5347548357722243040L;

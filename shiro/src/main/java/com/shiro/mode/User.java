@@ -2,13 +2,6 @@ package com.shiro.mode;
 
 import com.framework.base.BaseObject;
 
-/**
- * 用户对象
- *
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author wangxin
- * @Date Apr 9, 2015
- */
 public class User extends BaseObject {
 
     private static final long serialVersionUID = -1083711780724721275L;

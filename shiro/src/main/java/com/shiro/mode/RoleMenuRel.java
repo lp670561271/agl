@@ -2,13 +2,6 @@ package com.shiro.mode;
 
 import com.framework.base.BaseObject;
 
-/**
- * 角色菜单授权
- *
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author wangxin
- * @Date Apr 1, 2015
- */
 public class RoleMenuRel extends BaseObject {
 
     private static final long serialVersionUID = -1433759471026642934L;

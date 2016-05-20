@@ -4,13 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 构架树结构
- * 
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author wangxin
- * @date 2015-04-06
- */
 public class Node implements Serializable {
 
     private static final long serialVersionUID = -7382515600282738384L;

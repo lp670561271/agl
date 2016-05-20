@@ -5,13 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 分页对象
- * 
- * @Copyright 北京瑞友科技股份有限公司上海分公司-2014
- * @author majun
- * @date 2014-9-28
- */
 public class Page<T> implements Serializable {
 
     private static final long serialVersionUID = -3323321457300243220L;
