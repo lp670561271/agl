@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shiro.dao.aut.AutUserMapper">
+	<!-- 公共RESLUTMAP -->
+	<resultMap id="resultMap" type="com.shiro.mode.User">
+		<id column="USER_ID" jdbcType="VARCHAR" property="id" />
+		<result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+		<result column="ORG_TYPE" jdbcType="VARCHAR" property="orgType" />
+		<result column="ACCOUNT" jdbcType="VARCHAR" property="account" />
+		<result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+		<result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+		<result column="U_EMAIL" jdbcType="VARCHAR" property="u_email" />
+		<result column="SYSTEM_CODE" jdbcType="VARCHAR" property="systemCode" />
+		<result column="PARENT_ID" jdbcType="VARCHAR" property="parentId" />
+		<result column="IS_ADMIN" jdbcType="VARCHAR" property="isAdmin" />
+		<result column="IS_DEL" jdbcType="INTEGER" property="isDel" />
+		<result column="VERSION_NUM" jdbcType="INTEGER" property="versionNum" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="CREATE_USER" property="createUser" />
+		<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="ROLE_ID" property="roleId" />
+		<result column="CAS_ACCOUNT" property="casAccount"/>
+	</resultMap>
+	<!-- 公共列 -->
+	<sql id="columns">
+		AUT_USER_T.USER_ID,AUT_USER_T.ORG_ID,AUT_USER_T.ORG_TYPE,AUT_USER_T.ACCOUNT,AUT_USER_T.USER_NAME,AUT_USER_T.PASSWORD,
+		AUT_USER_T.U_EMAIL,AUT_USER_T.SYSTEM_CODE,AUT_USER_T.PARENT_ID,AUT_USER_T.IS_ADMIN,AUT_USER_T.IS_DEL,AUT_USER_T.VERSION_NUM,
+		AUT_USER_T.CREATE_USER_ID,AUT_USER_T.CREATE_TIME,AUT_USER_T.UPDATE_USER_ID,AUT_USER_T.UPDATE_TIME,CAS_ACCOUNT
+	</sql>
+	<select id="findUserByAccount" parameterType="java.lang.String" resultMap="resultMap">
+		SELECT <include refid="columns" /> FROM AUT_USER_T WHERE account=#{account} and password=#{password}
+	</select>
+</mapper>

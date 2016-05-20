@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:noNamespaceSchemaLocation="classpath:xsd/dubbo.xsd"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   
+    http://www.springframework.org/schema/tx   
+    http://www.springframework.org/schema/tx/spring-tx-3.1.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd  
+    http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- <dubbo:reference id="customService" interface="com.xjh.cu.service.CustomService" 
+		/> -->
+
+	<dubbo:reference id="customInfoBeanService"
+		interface="com.xjh.cu.service.CustomInfoBeanService" />
+
+	<dubbo:reference id="mystowService" interface="com.xjh.cu.service.MystowService" />
+
+	<!-- 会员地址 -->
+	<dubbo:reference id="cusAddrService" interface="com.xjh.cu.service.CusAddrService" />
+
+	<dubbo:reference id="cuItgService" interface="com.xjh.cu.service.CuItgService" />
+
+	<dubbo:reference id="myTicketService"
+		interface="com.xjh.cu.service.MyTicketService" />
+
+	<dubbo:reference id="returnRecordService"
+		interface="com.xjh.cu.service.ReturnRecordService" />
+
+	<!-- 我的E卡通 -->
+	<dubbo:reference id="ecartoonService"
+		interface="com.xjh.pay.service.EcartoonService" />
+	<dubbo:reference id="ecartoonAccountService" interface="com.xjh.cu.service.EcartoonAccountService"/>
+    
+	<!-- 投诉管理接口 -->
+	<dubbo:reference id="cusCmptService" interface="com.xjh.cu.service.CusCmptService" />
+
+	<!-- 数据字典接口 -->
+	<dubbo:reference id="dictService" interface="com.xjh.bd.service.DictService" />
+
+	<!-- 退换货接口 -->
+	<dubbo:reference id="rmaService" interface="com.xjh.so.service.RmaService" />
+
+	<dubbo:reference id="phyItemService" interface="com.xjh.so.service.PhyItemService" />
+
+	<dubbo:reference id="soCutService" interface="com.xjh.so.service.SoCutService" />
+
+	<dubbo:reference id="eventService" interface="com.xjh.ma.service.EventService" />
+
+	<dubbo:reference id="shareItemService" interface="com.xjh.so.service.ShareItemService" />
+	
+	
+	<dubbo:reference id="chargeService" interface="com.xjh.so.service.ChargeService" />
+	
+	<dubbo:reference id="accountManageService" interface="com.xjh.cu.service.AccountManageService" />
+	<!-- 中铁支付 -->
+	<dubbo:reference id="crecgecaPayService" interface="com.xjh.pay.service.CrecgecaPayService" />
+	
+<!-- 	<dubbo:reference id="qqConfiguration" interface="com.qq.connect.utils.Configuration" /> -->
+	
+<!-- 	<bean class="com.qq.connect.utils.http.Response"> -->
+<!-- 		<property name="configuration" ref="qqConfiguration"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean class="com.qq.connect.utils.http.HttpClient"> -->
+<!-- 		<property name="configuration" ref="qqConfiguration"/> -->
+<!-- 	</bean> -->
+
+</beans>

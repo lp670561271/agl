@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xsi:noNamespaceSchemaLocation="classpath:xsd/dubbo.xsd"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   
+    http://www.springframework.org/schema/tx   
+    http://www.springframework.org/schema/tx/spring-tx-3.1.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd  
+    http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:reference id="couponServiceApi" interface="com.xjh.api.service.CouponServiceApi" />
+	<dubbo:reference id="goodsStockServiceApi" interface="com.xjh.api.service.GoodsStockServiceApi" />
+	<dubbo:reference id="eventServiceApi" interface="com.xjh.api.service.EventServiceApi" />
+	<dubbo:reference id="busiLgServiceApi" interface="com.xjh.api.service.BusiLgServiceApi" />
+	<dubbo:reference id="uploadServiceApi" interface="com.xjh.api.service.UploadServiceApi" />
+	<dubbo:reference id="customerServiceApi" interface="com.xjh.api.service.CustomerServiceApi" />
+	<dubbo:reference id="goodsServiceApi" interface="com.xjh.api.service.GoodsServiceApi" />
+	<dubbo:reference id="brandServiceApi" interface="com.xjh.api.service.BrandServiceApi" />
+	<dubbo:reference id="busiManagerServiceApi" interface="com.xjh.api.service.BusiManagerServiceApi" />
+	<dubbo:reference id="sequenceServiceApi" interface="com.xjh.api.service.SequenceServiceApi" />
+		
+	<dubbo:reference id="sMSService" interface="com.xjh.util.sms.SMSService" />
+</beans>

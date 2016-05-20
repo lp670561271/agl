@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:noNamespaceSchemaLocation="classpath:xsd/dubbo.xsd"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   
+    http://www.springframework.org/schema/tx   
+    http://www.springframework.org/schema/tx/spring-tx-3.1.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd  
+    http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- service 配置实例 -->
+	<!-- 
+	<dubbo:reference id="dictService" interface="com.xjh.sample.dict.service.DictService" />
+	 -->
+	<!-- 底部栏接口 -->
+	<dubbo:reference id="footerItemInfoService" interface="com.xjh.cms.service.FooterItemInfoService" />
+	 
+	<!-- 菜单栏接口 -->
+	<dubbo:reference id="catNodeService" interface="com.xjh.cms.service.CatNodeService" />
+	 
+	<!-- 关键字接口 -->
+	<dubbo:reference id="keyWordService" interface="com.xjh.cms.service.KeyWordService" />
+	
+	<!-- 广告接口 -->
+	<dubbo:reference id="adpicService" interface="com.xjh.cms.service.AdpicService" />
+
+	<!-- 通告接口 -->
+	<dubbo:reference id="noticeService" interface="com.xjh.cms.service.NoticeService" />	
+	
+	<!-- 楼层接口 -->
+	<dubbo:reference id="pageLayoutService" interface="com.xjh.cms.service.PageLayoutService" />	
+	
+	<!-- 品牌接口 -->
+	<dubbo:reference id="brandRecomItemService" interface="com.xjh.cms.service.BrandRecomItemService" />
+	
+	<!-- 商家店铺接口 -->
+	<dubbo:reference id="contentService" interface="com.xjh.cms.service.ContentService" />
+	 
+	<!-- 商家店铺编辑接口 -->
+	<dubbo:reference id="appPageService" interface="com.xjh.cms.service.AppPageService" /> 
+	
+	<!-- 帮助中心接口 -->
+	<dubbo:reference id="helpService" interface="com.xjh.cms.service.HelpService" />
+	
+	<!-- 商品楼层信息接口 -->
+	<dubbo:reference id="goodsInfoService" interface="com.xjh.cms.service.GoodsInfoService" />
+	<dubbo:reference id="goodItemService" interface="com.xjh.cms.service.GoodItemService" />
+	
+	<!-- QQ登录接口 -->
+	<dubbo:reference id="qqLoginService" interface="com.xjh.cu.service.QQLoginService" />
+	
+	<!-- 微博登录接口 -->
+	<dubbo:reference id="weiboLoginService" interface="com.xjh.cu.service.WeiboLoginService" />
+	
+	<dubbo:reference id="fastDFSServiceApi" interface="com.xjh.api.service.FastDFSServiceApi" />
+</beans>
